@@ -63,8 +63,7 @@ func Create(o ...map[string]string) func(*f.Request, *f.Response, func()) {
 		// Because http.FileServer serves directories and it's own 404 we
 		// want to see if the file is really there before we hand of to it.
 		// To do that we see if the file exists. If it doesn't, then we return quickly.
-
-		// Question: Is this not really expensive?
+		// Question: Is this really expensive?
 		// Answer: It's not ideal. Writing a custom static server is on the todo list.
 		filepath := root + req.Url
 		// Check the stat cache as it's quicker than doing a stat on a file.
