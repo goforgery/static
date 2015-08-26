@@ -1,2 +1,13 @@
 # static
-Static static file server for Forgery2
+
+[![Build Status](https://secure.travis-ci.org/goforgery/static.png?branch=master)](http://travis-ci.org/goforgery/static)
+
+Static file server for Forgery2.
+
+## Use
+
+    static.Create()
+
+## Test
+
+    go test
