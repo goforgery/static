@@ -1,4 +1,4 @@
-package stackr
+package static
 
 import (
 	"github.com/goforgery/forgery2"
@@ -27,8 +27,8 @@ type staticOpt struct {
 //
 // Examples:
 //
-// 	stackr.CreateServer().Use(stackr.Static())
-// 	stackr.CreateServer().Use(stackr.Static(map[string]string{"root": "./public"}))
+// 	f.CreateServer().Use(static.Create())
+// 	f.CreateServer().Use(static.Create(map[string]string{"root": "./public"}))
 func Create(o ...map[string]string) func(*f.Request, *f.Response, func()) {
 
 	// If we got options use them.

@@ -1,4 +1,4 @@
-package stackr
+package static
 
 import (
 	"github.com/goforgery/forgery2"
