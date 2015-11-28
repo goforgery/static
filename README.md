@@ -4,6 +4,10 @@
 
 Static file server for Forgery2.
 
+## Install
+
+	go get github.com/goforgery/static
+
 ## Use
 
 By default files are served from a folder named `./public` in the directory where __Forgery2__ is started. For example if you have a the file `./public/text.txt` and you start the server in `./`, the file will be served from the URL http://localhost:3000/text.txt.
